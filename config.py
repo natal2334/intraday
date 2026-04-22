@@ -1,11 +1,12 @@
+MIN_INST=15
 HOURS_PER_DAY = 24
 DEFAULT_DAYS = 30
 DEFAULT_BACKTEST_MONTHS = 6
 DEFAULT_PRICE_COLUMN = "price"
 DEFAULT_TIMESTAMP_COLUMN = "timestamp"
-DEFAULT_DATA_FILE = "Netherlands.csv"
+DEFAULT_DATA_FILE = "data/synthetic_prices_5m.csv"
 CALIBRATE_ARIMA = False
-trading_cost = 5.0
+trading_cost = .0
 #DEFAULT_EVALUATION_MODE = "pnl"   
 #DEFAULT_EVALUATION_MODE = "battery_mse"
 DEFAULT_EVALUATION_MODE = "battery"

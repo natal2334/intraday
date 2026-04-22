@@ -4,5 +4,5 @@ Mv_max_discharge=-1.0   # max discharge per hour
 S1_storage_initial=0.0     # initial storage
 alpha_storage_loss=0.0  # no storage loss
 C_cost_holding=0.0      # no holding cost
-terminal_storage=0.0  # end the day empty
-grid_step=0.5         # grid step for optimization
+terminal_storage=1.0  # end the day empty
+grid_step=0.1         # grid step for optimization

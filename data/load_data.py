@@ -10,16 +10,16 @@ def load_prices_from_csv(path: str = "synthetic_prices_5m.csv") -> pd.Series:
     df = pd.read_csv(path)
 
     df["Datetime (UTC)"] = pd.to_datetime(
-        df["Datetime (UTC)"],
+        df["timestamp"],
         format="%Y-%m-%d %H:%M:%S",
         errors="coerce",
     )
 
-    df = df.dropna(subset=["Datetime (UTC)", "Price (EUR/MWhe)"])
+    df = df.dropna(subset=["Datetime (UTC)", "synthetic_price"])
     df = df.sort_values("Datetime (UTC)")
 
     prices = pd.Series(
-        df["Price (EUR/MWhe)"].values,
+        df["synthetic_price"].values,
         index=df["Datetime (UTC)"],
         name="power_price",
     )
