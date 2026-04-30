@@ -1,0 +1,15 @@
+create: python -m venv intraday
+activate in bash: source intraDay/Scripts/activate
+
+.venv\Scripts\Activate.ps1
+
+Create:
+In terminal of Visual studio code type: (create folder ,venv)
+python -m venv .venv
+
+and then change in python/Select enterpreter
+C:\Users\iboro\AIprojects\Project1
+
+what is the weather in Utrecht today?
+
+
